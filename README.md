@@ -96,26 +96,6 @@ bash install.sh
 "instala a skill desse link: https://gist.github.com/..."
 ```
 
----
-
-## 🔌 Multi-provider — escolha o que cabe no seu bolso
-
-Configure pela GUI (botão ⚙ no canto superior direito) **sem editar arquivo**:
-
-| Provider | Free tier | Voz | Ideal pra |
-|----------|-----------|-----|-----------|
-| **Groq** | ✅ Generoso | ❌ | Começar (sem cartão) |
-| **OpenAI** | $5 inicial | ✅ Sim | Full features |
-| **Gemini** | ✅ Sim | ❌ | Free + visão |
-| **Anthropic** | ❌ | ❌ | Qualidade alta |
-| **DeepSeek** | ❌ (barato) | ❌ | Custo mínimo |
-| **OpenRouter** | Alguns | ❌ | Multi-modelo |
-| **Ollama** | ✅ Sempre | ❌ | Offline / privacidade total |
-| Custom | — | — | Qualquer API OpenAI-compat |
-
-**Fallback automático**: se Groq cair, tenta OpenAI; se OpenAI cair, tenta Gemini; etc. Sem você fazer nada.
-
----
 
 ## 🛠️ 15 tools nativas (out-of-the-box)
 
@@ -152,7 +132,7 @@ E você pode criar quantas mais quiser, dinamicamente.
 - 📖 [TUTORIAL.md](TUTORIAL.md) — extender com IA-assisted dev
 - 🏗️ [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) — arquitetura técnica
 - 🔌 [docs/API.md](docs/API.md) — endpoints HTTP
-- 📑 [docs/Kerneo-Lite-Apresentacao.pdf](docs/Kerneo-Lite-Apresentacao.pdf) — apresentação completa (32 páginas)
+
 
 ---
 
@@ -191,7 +171,7 @@ Se ele te ajudou, e você quiser apoiar a evolução do projeto (servidores, inf
 ### 🇧🇷 PIX (Brasil)
 
 ```
-kerneolsbs@gmail.com
+Chave: kerneolabs@gmail.com
 ```
 
 Toda contribuição ajuda a manter o desenvolvimento ativo. **Obrigado!** 🙏
