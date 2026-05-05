@@ -43,39 +43,51 @@ que você pode revisar, editar, versionar com git, ou compartilhar com qualquer 
 
 ---
 
-
 ## 🧠 Kernel Palace — sua IA lembra de você
 
 > Outros assistentes te esquecem quando você fecha a aba.
 > O Kerneo lembra. **Entre sessões. Entre dias. Entre updates.**
-Você: "salva: meu CEP é 01310-100"
-Kerneo: ✓ Pronto.
 
-[3 dias depois, sessão nova]
+```
+Você:    "salva: meu CEP é 01310-100"
+Kerneo:  ✓ Pronto.
 
-Você: "qual meu CEP?"
-Kerneo: Seu CEP é 01310-100.
+( 3 dias depois, sessão nova )
+
+Você:    "qual meu CEP?"
+Kerneo:  Seu CEP é 01310-100.
+```
 
 **3 camadas locais (SQLite no seu PC)**:
 - 🗂️ **Facts** — chave/valor sobre você (CEP, preferências, contexto)
 - 💬 **History** — últimos turnos da conversa
 - 🎯 **Sessions** — estado por sessão (último plano, retry, etc)
+
 ### 🔒 Privacidade real
+
 Tudo em `data/kerneo.db`. **Nada vai pra nuvem**. Quer apagar? Delete o arquivo.
 Funciona até offline (com Ollama). Sua memória é sua.
 
 ---
 
 ## 🚀 Como começar (5 minutos)
+
 ### 📋 Antes de tudo — o que são "pré-requisitos"?
+
 Pra rodar o Kerneo, seu PC precisa ter **alguns programas básicos** instalados:
+
 - 🟢 **Node.js 20+** (obrigatório) — é o "motor" que faz o Kerneo rodar
 - 🔵 **Python 3.12+** (opcional) — pra futuras integrações
 - 🔵 **ffmpeg** (opcional) — pra processamento de áudio
+
 Se você nunca ouviu falar disso, sem stress. Tem **2 caminhos** pra você escolher:
+
 ---
+
 ### 🟢 Opção A — Caminho automático (recomendado pra leigos)
+
 Pra quem **não quer ter trabalho** instalando programa por programa:
+
 1. **Baixa esse repo**: clica no botão verde **Code** (no topo) → **Download ZIP** → extrai
 2. **Abre a pasta** `installer-prereqs/` dentro do que você baixou
 3. **Double-click em `Verificar_Requisitos.exe`**
@@ -90,11 +102,17 @@ Pra quem **não quer ter trabalho** instalando programa por programa:
    - Pular (configurar manualmente em `config.json`)
 7. Cola tua API key
 8. Pronto — abre `http://localhost:5070`
+
 > ⚠️ **Windows Defender pode avisar** que o `.exe` é arquivo desconhecido. É falso positivo (arquivo sem assinatura digital). Clica em **"Mais informações" → "Executar mesmo assim"**.
+
 ---
+
 ### 🔧 Opção B — Caminho manual (pra quem prefere instalar na mão)
+
 Pra quem **prefere controlar cada passo** ou já tem alguns programas instalados:
+
 #### Windows / macOS
+
 1. **Instala Node.js 20+**: https://nodejs.org → botão verde **LTS** → next, next, finish
 2. **Baixa esse repo** (Code → Download ZIP, ou `git clone`)
 3. **Double-click em `install.bat`** (Windows) ou `bash install.sh` (Mac)
@@ -104,18 +122,21 @@ Pra quem **prefere controlar cada passo** ou já tem alguns programas instalados
    - Pular (configurar manualmente em `config.json`)
 5. Cola tua API key
 6. Pronto — abre `http://localhost:5070`
+
 #### Linux
+
 ```bash
 # Instala Node.js 20+
 curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 sudo apt install -y nodejs
+
 # Clona e roda
 git clone https://github.com/vjdanilocoimbra/Kerneo.git
 cd Kerneo
 bash install.sh
+```
 
-
-💡 Não sabe qual caminho escolher? Vai na Opção A — o Verificar_Requisitos.exe te diz o que falta e resolve sozinho. Se já tem Node.js instalado, ele só confirma e segue.
+> 💡 **Não sabe qual caminho escolher?** Vai na **Opção A** — o `Verificar_Requisitos.exe` te diz o que falta e resolve sozinho. Se já tem Node.js instalado, ele só confirma e segue.
 
 📖 **Documentação completa**: [COMECE-AQUI.md](COMECE-AQUI.md) · [INSTALL.md](INSTALL.md)
 
@@ -148,6 +169,7 @@ bash install.sh
 "instala a skill desse link: https://gist.github.com/..."
 ```
 
+---
 
 ## 🛠️ 15 tools nativas (out-of-the-box)
 
@@ -184,7 +206,6 @@ E você pode criar quantas mais quiser, dinamicamente.
 - 📖 [TUTORIAL.md](TUTORIAL.md) — extender com IA-assisted dev
 - 🏗️ [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) — arquitetura técnica
 - 🔌 [docs/API.md](docs/API.md) — endpoints HTTP
-
 
 ---
 
